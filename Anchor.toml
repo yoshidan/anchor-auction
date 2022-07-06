@@ -1,0 +1,10 @@
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[programs.localnet]
+anchor_auction = "HGhUfApRyEBL758VLG5kq45UkEAsvaVcPvCxVHuXMdhU"
+
+[scripts]
+test = "ts-mocha -p tsconfig.json tests/*.ts -t 10000"
+

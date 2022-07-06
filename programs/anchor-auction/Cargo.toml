@@ -1,0 +1,22 @@
+[package]
+name = "anchor-auction"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "anchor_auction"
+
+[features]
+cpi = ["no-entrypoint"]
+default = []
+no-entrypoint = []
+no-idl = []
+
+[dependencies]
+anchor-lang = "0.24.2"
+anchor-spl = {version = "0.24.2"}
+spl-token = {version = "3.3.0", features = ["no-entrypoint"]}
+
+
